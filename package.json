@@ -1,0 +1,33 @@
+{
+  "name": "@keqingrong/js-codemod",
+  "version": "0.1.0",
+  "description": "JS codemod scripts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage",
+    "publish": "clean-publish"
+  },
+  "keywords": [
+    "codemod",
+    "js-codemod",
+    "strip-header-comment"
+  ],
+  "author": "Qingrong Ke <keqingrong@outlook.com> (https://keqingrong.github.io/)",
+  "license": "MIT",
+  "repository": "keqingrong/js-codemod",
+  "devDependencies": {
+    "@types/jscodeshift": "^0.11.2",
+    "clean-publish": "^2.2.0",
+    "jest": "^27.1.0",
+    "jscodeshift": "^0.13.0",
+    "typescript": "^4.4.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}
